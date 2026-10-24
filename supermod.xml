@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<mod name="ReadyUpLockFix"
+     description="Fixes the desync hardlock in the ready up screen when players join or leave."
+     author="BangL"
+     version="1.0.0"
+     min_sblt_version="2.0.0"
+     priority="900"
+     color="60 60 60">
+<updates>
+        <update identifier="readyuplockfix">
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/readyuplockfix.json"/>
+        </update>
+    </updates>
+    <hooks>
+        <pre hook_id="lib/entry"
+             script_path="ReadyUpLockFix.lua" />
+        <post hook_id="lib/managers/menu/raid_menu/readyupgui"
+              script_path="lua/ReadyUpGui.lua" />
+        <post hook_id="lib/managers/menu/menucomponentmanager"
+              script_path="lua/MenuComponentManager.lua" />
+        <post hook_id="lib/network/base/hostnetworksession"
+              script_path="lua/HostNetworkSession.lua" />
+        <post hook_id="lib/managers/challengecardsmanager"
+              script_path="lua/ChallengeCardsManager.lua" />
+    </hooks>
+</mod>
