@@ -2,7 +2,7 @@
 <mod name="ReadyUpLockFix"
      description="Fixes the desync hardlock in the ready up screen when players join or leave."
      author="BangL"
-     version="1.0.0"
+     version="1.0.1"
      min_sblt_version="2.0.0"
      priority="900"
      color="60 60 60">
@@ -20,6 +20,8 @@
               script_path="lua/MenuComponentManager.lua" />
         <post hook_id="lib/network/base/hostnetworksession"
               script_path="lua/HostNetworkSession.lua" />
+        <post hook_id="core/lib/managers/coreworldcameramanager"
+              script_path="lua/CoreWorldCameraManager.lua" />
         <post hook_id="lib/managers/challengecardsmanager"
               script_path="lua/ChallengeCardsManager.lua" />
     </hooks>

@@ -109,6 +109,7 @@ if not ReadyUpLockFix.setup then
             "assemble_dropped",
             "cards_override",
             "leave_button_restored",
+            "world_camera_state_fixed",
         }
         local parts = {}
         local any = false
