@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<mod name="ReadyUpLockFix"
+<mod name="ReadyUpLockFix" image="icon.png"
      description="Fixes the desync hardlock in the ready up screen when players join or leave."
      author="BangL"
      version="1.0.1"
