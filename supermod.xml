@@ -8,7 +8,7 @@
      color="60 60 60">
 <updates>
         <update identifier="readyuplockfix">
-            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/readyuplockfix.json"/>
+            <host meta="https://raw.githubusercontent.com/BangL/raid-mods-meta/main/readyuplockfix.json" patchnotes="https://github.com/BangL/ReadyUpLockFix/blob/master/CHANGELOG.md"/>
         </update>
     </updates>
     <hooks>
